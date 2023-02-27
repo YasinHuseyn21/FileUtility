@@ -4,7 +4,7 @@ import java.nio.file.Path;
 import java.nio.file.Paths;
 
 public class FileUtility {
-    
+
     public static void writeToFile(String fileName, String text) throws IOException {
         try (BufferedWriter bufferedWriter = new BufferedWriter(new FileWriter(fileName));) {
             bufferedWriter.write(text);
